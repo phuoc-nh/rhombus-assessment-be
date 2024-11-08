@@ -1,0 +1,22 @@
+Name,Birthdate,Score,Grade,Boolean
+Alice====',"January'''''' 15, 2023",90,A,TRUE
+Bob,2/02/1991,75,B,FALSE
+Charlie,3/03/1992,85,A,FALSE
+David,4/04/1993,70,B,FALSE
+zxc,5/0/1994,Not Available,A,FALSE
+zc,"January'''''' 15, 2023",90,A,FALSE
+z,2/02/1991,75,B,FALSE
+qw,3/03/1992,85,A,TRUE
+z,4/04/1993,70,B,FALSE
+we,5/0/1994,Not Available,A,FALSE
+asd,"January'''''' 15, 2023",90,A,TRUE
+zxc,2/02/1991,75,B,TRUE
+qw,3/03/1992,85,A,TRUE
+x,4/04/1993,70,B,FALSE
+zxzx,5/0/1994,Not Available,A,TRUE
+qw,3/03/1992,85,A,FALSE
+x,4/04/1993,70,B,TRUE
+zxzx,5/0/1994,Not Available,A,FALSE
+qw,3/03/1992,85,A,TRUE
+x,4/04/1993,70,B,FALSE
+zxzx,5/0/1994,Not Available,A,FALSE

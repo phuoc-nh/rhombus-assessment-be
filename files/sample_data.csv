@@ -1,0 +1,16 @@
+Name,Birthdate,Score,Grade
+Alice====',"January'''''' 15, 2023",90,A
+Bob,2/02/1991,75,B
+Charlie,3/03/1992,85,A
+David,4/04/1993,70,B
+zxc,5/0/1994,Not Available,A
+zc,"January'''''' 15, 2023",90,A
+z,2/02/1991,75,B
+qw,3/03/1992,85,A
+z,4/04/1993,70,B
+we,5/0/1994,Not Available,A
+asd,"January'''''' 15, 2023",90,A
+zxc,2/02/1991,75,B
+qw,3/03/1992,85,A
+x,4/04/1993,70,B
+zxzx,5/0/1994,Not Available,A
