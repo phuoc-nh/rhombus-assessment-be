@@ -104,6 +104,13 @@ class FileUploadView(APIView):
         entity.save()
         
         return Response({"success": "true"}, status=status.HTTP_200_OK)
+
+class FileListView(APIView):
+    def get(self, request, *args, **kwargs):
+        files = FileTypeModel.objects.all()
+        files_data = [{"id": file.id, "file": file.file} for file in files]
+        return Response(files_data, status=status.HTTP_200_OK)
+
 def index(request):
     examples = ExampleModel.objects.all()
     # for example in examples:
