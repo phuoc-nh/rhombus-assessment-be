@@ -1,16 +1,11 @@
-Name,Birthdate,Score,Grade
-Alice====',"January'''''' 15, 2023",90,A
-Bob,2/02/1991,75,B
-Charlie,3/03/1992,85,A
-David,4/04/1993,70,B
-zxc,5/0/1994,Not Available,A
-zc,"January'''''' 15, 2023",90,A
-z,2/02/1991,75,B
-qw,3/03/1992,85,A
-z,4/04/1993,70,B
-we,5/0/1994,Not Available,A
-asd,"January'''''' 15, 2023",90,A
-zxc,2/02/1991,75,B
-qw,3/03/1992,85,A
-x,4/04/1993,70,B
-zxzx,5/0/1994,Not Available,A
+id,name,age,date_of_birth,salary,joining_date,city,active
+1,John Doe,29,1991/09/21,55000.50,2022-03-01,New York,True
+2,Jane Smith,31,1991/09/21,67000.75,2021-07-10,;Tokyo,False
+3,Bob Johnson,,,"75000",1991/09/21,London,True
+4,Emily Davis,25,1991/09/21,"45000.00",,,False
+5,Chris Lee,40,1991/09/21,82000,;San Francisco,Los Angeles,True
+6,Alice Brown,27,1991/09/21,""90000"",2021-09-01,"Sydney...",False
+7,Mark White,35,1991/09/21,50000,2020-11-25,";Berlin",True
+8,Nancy Black,29,"1993/07/14","60000",,New ...Delhi,False
+9,Tom Green,,,"""75000.50""",2024-01-15,"Paris",True
+10,Susan Clark,32,1991/09/21,65000,2022-12-31,Chicago,False

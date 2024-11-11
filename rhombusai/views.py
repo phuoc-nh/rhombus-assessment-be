@@ -51,23 +51,23 @@ class FileUploadView(APIView):
         inferred_types = {} 
         for col in df.columns:
             case = {
-				"int64": "integer",
 				"float64": "number",
 				"datetime64[ns]": "dateTime",
 				"category": "category",
 				"object": "text",
-                "bool": "boolean"
+                "bool": "boolean",
+                "integer": "number",
 			}
             if str(df[col].dtype) in case:
                 inferred_types[col] = case[str(df[col].dtype)]
             
         # if file has custom types, override the inferred types
-        if file.type:
-            inferred_types = file.type
-        # otherwise, save inferred types to the database
-        else:
-            file.type = inferred_types
-            file.save()
+        # if file.type:
+        #     inferred_types = file.type
+        # # otherwise, save inferred types to the database
+        # else:
+        file.type = inferred_types
+        file.save()
             
         data = []
         for _, row in df.iterrows():
@@ -78,15 +78,18 @@ class FileUploadView(APIView):
                     row_dict[key] = value.isoformat()
                 elif value is pd.NaT:
                     row_dict[key] = 'NaT'
+                    
+                elif pd.isna(value):
+                    row_dict[key] = 'NaN'
             data.append(row_dict)
-        
+        print('>>>>> data', data)
         return Response(
             {
            		"file_id": file.id,
 				"data": json.dumps(data),
 				"types": inferred_types,
-				"page": page,
-				"limit": limit,
+				# "page": page,
+				# "limit": limit,
 				"total_pages": total_pages
             },
 			status=status.HTTP_200_OK
@@ -107,7 +110,7 @@ class FileUploadView(APIView):
 
 class FileListView(APIView):
     def get(self, request, *args, **kwargs):
-        files = FileTypeModel.objects.all()
+        files = FileTypeModel.objects.all().order_by('-id')
         files_data = [{"id": file.id, "file": file.file} for file in files]
         return Response(files_data, status=status.HTTP_200_OK)
 

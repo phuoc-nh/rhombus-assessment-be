@@ -1,0 +1,11 @@
+transaction_id,customer_name,purchase_amount,purchase_date,product_code,discount,city,verified
+101,Alice Wonderland,123.45,2022-01-15,P001,10%,San... Diego,TRUE
+102,Bob Builder,200,01-22-2022,P002,"""5%""", New ;York,FALSE
+103,Charlie Brown,450.00,2022/05/11,P003,20%,Los Angeles,TRUE
+104,Dora Explorer,,2021-11-10,P004,,Tokyo;,FALSE
+105,Eric Cartman,1000,2023/02/18,,5%,Chicago,FALSE
+106,Fiona Shrek,,1991/09/21,P006,,New Delhi,TRUE
+107,George Jetson,150,1991/09/21,P007,15%,Paris,TRUE
+108,Harry Potter,275.50,2022/05/11,P008,,London,TRUE
+109,Indiana Jones,"""500""",2021/08/30,2023,,Berlin,FALSE
+110,Jack Sparrow,800.00,2021/08/30,P010,10%,;Miami,TRUE
